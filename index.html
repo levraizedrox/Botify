@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botify - Accueil</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #000; /* Fond noir */
+        }
+
+        header {
+            background: rgba(20, 20, 20, 0.9);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Pour rester au-dessus du contenu */
+        }
+
+        #discord-logo img {
+            width: 50px; /* Taille du logo Discord */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px; /* Espace entre les éléments du menu */
+        }
+
+        nav a {
+            color: #28a745; /* Couleur du lien */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff; /* Couleur au survol */
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        #hero {
+            text-align: center;
+            padding: 50px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+
+        #hero h2 {
+            margin: 0 0 20px;
+            font-size: 3em; /* Augmenté la taille du texte */
+        }
+
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #218838; /* couleur au survol */
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            font-size: 2.5em; /* Taille du titre de section */
+            color: #28a745; /* Titre de section en vert */
+        }
+
+        .rules {
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(20, 20, 20, 0.9);
+            color: white;
+            margin-top: 40px;
+            box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        /* GIF d'arrière-plan */
+        .background-gif {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Derrière tout le contenu */
+            opacity: 0.5; /* Opacité pour ne pas gêner la lecture */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://discord.gg/YqupzyMejM" id="discord-logo">
+            <img src="https://media.tenor.com/zfzX5vT72T0AAAAi/discord.gif" alt="Discord Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#features">Fonctionnalités</a></li>
+                <li><a href="#rules">Règlement</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="background-gif">
+        <img src="https://media1.tenor.com/m/1mwdqr51emcAAAAC/test-typing.gif" alt="GIF d'arrière-plan" style="width: 100%; height: auto;">
+    </div>
+
+    <main>
+        <section id="hero">
+            <h2>Découvrez nos serveurs Discord</h2>
+            <p>Rejoignez notre communauté de création de serveur discord et de bot !</p>
+            <a href="https://discord.gg/YqupzyMejM" class="cta-button">Rejoindre Discord</a>
+        </section>
+
+        <section id="about">
+            <h2>À propos de Botify</h2>
+            <p>Botify est un projet dédié à la création de bots Discord par nos développeurs talentueux et à l'assistance de notre communauté. Nous avons des ressources et un support pour vous aider à réussir.</p>
+        </section>
+
+        <section id="features">
+            <h2>Fonctionnalités des bots</h2>
+            <h3>Conditions Bot</h3>
+            <p><strong>Bot basique gratuit (essai de 1 semaine) :</strong></p>
+            <ul>
+                <li>Essai gratuit : Lors de la création de votre serveur, vous aurez accès à un bot basique gratuit pendant 1 semaine.</li>
+                <li>Modération de base (bannissement/kick, filtrage de contenu).</li>
+                <li>Messages de bienvenue et assignation automatique de rôles.</li>
+                <li>Quelques commandes simples (ex. météo, fun facts, etc.).</li>
+                <li>Après l'essai : Si vous souhaitez continuer à utiliser le bot basique, il deviendra payant : Nitro Basic ou 2,99 €/mois.</li>
+            </ul>
+
+            <p><strong>Bot personnalisé (payant dès le départ) :</strong></p>
+            <ul>
+                <li>Commandes spécifiques à vos besoins (sondages, réactions, notifications automatiques, etc.).</li>
+                <li>Modération avancée et personnalisable.</li>
+                <li>Systèmes d'événements (automatisation des tirages au sort, concours, etc.).</li>
+                <li>Support et maintenance inclus avec la formule payante : Nitro Boost ou 9,99 €/mois.</li>
+            </ul>
+
+            <h3>Création de serveur 100% gratuit !</h3>
+            <p>Pour la création de serveur, vous disposerez d'un bot :</p>
+            <ul>
+                <li>Minimum 10 canaux, incluant des canaux texte et vocaux.</li>
+                <li>Organisation et permissions via des rôles personnalisés.</li>
+                <li>Rôles d'administration/modération pour contrôler l'accès aux fonctionnalités.</li>
+            </ul>
+        </section>
+
+        <section id="rules">
+            <h2>Règlement de Botify</h2>
+            <div class="rules">
+                <p><strong>Bienvenue !</strong></p>
+                <p>Voici le règlement de ce serveur Discord. S'il n'est pas respecté, cela peut encourir des sanctions. À noter que ce règlement est non-exhaustif et que certaines règles peuvent se trouver dans les messages épinglés des channels. Les modérateurs peuvent se réserver le droit de ban un membre dans toutes les situations qu’ils pensent être incorrectes.</p>
+
+                <h3>Règles générales</h3>
+                <ul>
+                    <li>Rester courtois, poli et sympathique avec tout utilisateur, sous peine de ban.</li>
+                    <li>Les propos discriminatoires, contenus pornographiques ou religieux sont prohibés.</li>
+                    <li>La diffusion d'informations privées non-consenties est strictement interdite.</li>
+                    <li>L'usurpation d'identité, de pseudos ou autres est strictement interdite.</li>
+                    <li>Le staff est en droit de modifier tout pseudo non-conforme.</li>
+                    <li>Les menaces de piratage ou de violence sont prohibées.</li>
+                    <li>La publicité est interdite sur ce serveur.</li>
+                    <li>Seuls les modérateurs sont en mesure de faire respecter le règlement.</li>
+                </ul>
+
+                <h3>Salons écrits</h3>
+                <ul>
+                    <li>Mentions here et everyone interdites.</li>
+                    <li>Les spam/flood/spoil sont interdits.</li>
+                    <li>Merci de ne pas mentionner les modos, ils lisent vos messages !</li>
+                    <li>Merci d'écrire en français correct.</li>
+                </ul>
+
+                <h3>Salons vocaux</h3>
+                <ul>
+                    <li>Le spam auditif et les screamers audios sont strictement interdits.</li>
+                    <li>Restez courtois en toutes situations.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Botify. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
